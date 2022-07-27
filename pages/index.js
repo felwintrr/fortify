@@ -1,6 +1,6 @@
 import { Box, Container, Heading, Text, Image, Flex } from "@chakra-ui/react";
 import Head from "next/head";
-import SubmitButton from "../components/connect-button";
+import SubmitButton from "../components/sumbit-button";
 import Footer from "../components/footer";
 import IpfsInput from "../components/ipfs-input";
 import Navbar from "../components/navbar";
