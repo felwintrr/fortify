@@ -4,16 +4,18 @@ import { FaWallet } from "react-icons/fa";
 const Navbar = () => {
   return (
     <Flex
-      p={4}
+      p={{ base: "0.15rem", sm: "0.25rem" }}
       alignContent="center"
       alignItems="center"
       justifyContent="space-between"
     >
-      <Box ml={12}>
+      <Box ml={{ base: "0.5rem", sm: "1rem" }}>
         <Image src="webclip.png" alt="Fortify logo" boxSize="90px" />
       </Box>
-      <Box mr={12}>
-      <Button size="md" colorScheme='orange' >Login  &nbsp; <FaWallet />  </Button>
+      <Box mr={{ base: "0.5rem", sm: "1rem" }}>
+        <Button size="md" colorScheme="green">
+          Login &nbsp; <FaWallet />{" "}
+        </Button>
       </Box>
     </Flex>
   );
