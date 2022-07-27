@@ -56,7 +56,7 @@ export default function Home() {
         </Container>
         <Flex
           justifyContent="space-between"
-          display={{ base: "none", sm: "flex" }} /*mt="-250px"*/
+          display={{ base: "none", sm: "flex" }} mt="-250px"
         >
           <Image src="nfts-fortify-p-500.png" loading="lazy" opacity="0.2"/>
           <Image src="nfts-fort-p-500.png" loading="lazy" opacity="0.2" />
