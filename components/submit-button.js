@@ -1,16 +1,18 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Container } from "@chakra-ui/react";
 
 const SubmitButton = () => {
   // const userInput = document.getElementById("userInput").value;
 
   return (
-    <Button
-      width={{ base: "300px", md: "500px" }}
-      mt="0.5rem"
-      colorScheme="green"
-    >
-      Submit
-    </Button>
+    <Container centerContent>
+      <Button
+        width={{ base: "300px", md: "500px" }}
+        mt="1rem"
+        colorScheme="blue"
+      >
+        Submit
+      </Button>
+    </Container>
   );
 };
 
