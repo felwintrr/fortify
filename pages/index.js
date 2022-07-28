@@ -4,9 +4,11 @@ import SubmitButton from "../components/submit-button";
 import Footer from "../components/footer";
 import IpfsInput from "../components/ipfs-input";
 import Navbar from "../components/navbar";
+import Avatars from "../components/avatars";
+import Hero from "../components/hero";
+import Background from "../components/background"
 
 export default function Home() {
-
   return (
     <Box>
       <Head>
@@ -17,51 +19,16 @@ export default function Home() {
         />
       </Head>
       <Navbar />
-      <Container maxW="container.xl" centerContent>
-        <Container maxW="container.md">
-          <Heading
-            fontSize={{ base: "3.5rem", sm: "4rem" }}
-            fontWeight="extrabold"
-            textAlign="center"
-            mt={{ base: "1rem", sm: "0rem" }}
-          >
-            Your NFTs deserve{" "}
-            <Heading
-              color="green.400"
-              fontSize={{ base: "3.5rem", sm: "4rem" }}
-              fontWeight="extrabold"
-              textAlign="center"
-              mt={{ base: "1rem", sm: "0rem" }}
-            >
-              permanent storage.
-            </Heading>
-          </Heading>
-          <Text
-            fontSize="1.375rem"
-            fontWeight="medium"
-            textAlign="center"
-            mt={6}
-          >
-            Get your entire collection on Arweaveⓐ with a few clicks
-          </Text>
-        </Container>
+      <Container maxW="container.xl">
+        <Hero />
+        <Text fontWeight="bold" textAlign="center" p={2} mt={20}>
+          Enter your metadata CID to get started
+        </Text>
+        <IpfsInput />
+        <SubmitButton />
+        <Avatars />
       </Container>
-      <Box>
-        <Container mt={20} maxW="container.xl" centerContent>
-          <Text fontWeight="bold" textAlign="center" p={2}>
-            Enter your metadata CID to get started
-          </Text>
-          <IpfsInput />
-          <SubmitButton />
-        </Container>
-        <Flex
-          justifyContent="space-between"
-          display={{ base: "none", sm: "flex" }} mt="-250px"
-        >
-          <Image src="nfts-fortify-p-500.png" loading="lazy" opacity="0.2"/>
-          <Image src="nfts-fort-p-500.png" loading="lazy" opacity="0.2" />
-        </Flex>
-      </Box>
+      <Background />
       <Footer />
     </Box>
   );
