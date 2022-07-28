@@ -13,7 +13,7 @@ const Navbar = () => {
         <Image src="webclip.png" alt="Fortify logo" boxSize="90px" />
       </Box>
       <Box mr={{ base: "0.5rem", sm: "1rem" }}>
-        <Button size="md" colorScheme="green">
+        <Button size="md" colorScheme="orange">
           Login &nbsp; <FaWallet />{" "}
         </Button>
       </Box>
