@@ -7,6 +7,7 @@ import Navbar from "../components/navbar";
 import Avatars from "../components/avatars";
 import Hero from "../components/hero";
 import Background from "../components/background";
+import GridListWithHeading from "../components/features-grid-list";
 
 export default function Home() {
   return (
@@ -29,14 +30,17 @@ export default function Home() {
         <Avatars />
       </Container>
       <Background />
-      <Container maxW="container.xl" border="8px" borderColor="gray.900" borderRadius="md" centerContent>
+      <Container maxW="container.xl" centerContent>
         <iframe
-          width="1265"
-          height="712"
+          width="1270"
+          height="720"
           src="https://www.youtube.com/embed/IVzsKd2ZFs4"
           title="Fortify YouTube video"
           allowFullScreen
         />
+      </Container>
+      <Container maxW="container.xl">
+        <GridListWithHeading />
       </Container>
       <Footer />
     </Box>
