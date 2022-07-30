@@ -5,7 +5,7 @@ const Background = () => {
     <Flex
         justifyContent="space-between"
         display={{ base: "none", sm: "flex" }}
-        mt="-400px"
+        mt="-300px"
       >
         <Image src="nfts-fortify-p-500.png" loading="lazy" opacity="0.2" />
         <Image src="nfts-fort-p-500.png" loading="lazy" opacity="0.2" />
